@@ -1,0 +1,23 @@
+name: Pull Request Check
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        nextjs-version: [ 12, 13, 14 ]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - run: pnpm i --frozen
+      - run: pnpm install next@${{ matrix.nextjs-version }}
+      - run: pnpm run lint
+      - run: pnpm run test:ci

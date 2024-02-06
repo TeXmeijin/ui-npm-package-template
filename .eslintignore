@@ -1,0 +1,5 @@
+node_modules
+dist
+**/*.stories.tsx
+
+cheerio.d.ts

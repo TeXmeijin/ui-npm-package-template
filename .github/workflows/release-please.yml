@@ -1,0 +1,46 @@
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**'
+      - '!.github/**'
+      - '!.storybook/**'
+
+permissions:
+  contents: write
+  pull-requests: write
+  packages: write
+
+name: Release Pull Request
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v4
+        id: release
+        with:
+          # this is a built-in strategy in release-please, see "Action Inputs"
+          # for more options
+          release-type: node
+      - uses: actions/checkout@v4
+        if: ${{ steps.release.outputs.release_created }}
+      # Setup .npmrc file to publish to GitHub Packages
+      - uses: actions/setup-node@v3
+        if: ${{ steps.release.outputs.release_created }}
+        with:
+          node-version: '20.x'
+          registry-url: https://npm.pkg.github.com/
+      - uses: oven-sh/setup-bun@v1
+        if: ${{ steps.release.outputs.release_created }}
+      - uses: pnpm/action-setup@v2
+        if: ${{ steps.release.outputs.release_created }}
+        with:
+          version: 8
+      - run: pnpm i --frozen
+        if: ${{ steps.release.outputs.release_created }}
+      - run: pnpm run build
+        if: ${{ steps.release.outputs.release_created }}
+      - run: pnpm publish
+        if: ${{ steps.release.outputs.release_created }}
