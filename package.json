@@ -1,6 +1,6 @@
 {
   "name": "@texmeijin/ui-library-example",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "UI Components and Utils built with React.",
   "sideEffects": false,
   "main": "./dist/cjs/index.js",

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/TeXmeijin/ui-npm-package-template/compare/v1.0.0...v1.0.1) (2024-02-06)
+
+
+### Bug Fixes
+
+* 🐛 [docs] jsdoc ([b28f926](https://github.com/TeXmeijin/ui-npm-package-template/commit/b28f9264f7dd0272fc551b8e77fa2cd524ba0187))
+
 ## 1.0.0 (2024-02-06)
 
 
