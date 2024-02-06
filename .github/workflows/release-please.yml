@@ -31,7 +31,7 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
         with:
           node-version: '20.x'
-          registry-url: https://npm.pkg.github.com/
+          registry-url: 'https://registry.npmjs.org'
       - uses: oven-sh/setup-bun@v1
         if: ${{ steps.release.outputs.release_created }}
       - uses: pnpm/action-setup@v2
@@ -43,4 +43,6 @@ jobs:
       - run: pnpm run build
         if: ${{ steps.release.outputs.release_created }}
       - run: pnpm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         if: ${{ steps.release.outputs.release_created }}
