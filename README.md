@@ -39,3 +39,4 @@ import {Text} from '@texmeijin/ui-library-example'
 - [ ] GitHub Actionsの設定：Storybookの自動デプロイ
 - [ ] GitHub Actionsの設定：npmパッケージの自動デプロイ
 - [ ] Storybookの設定
+- [ ] Tailwind CSSの設定
