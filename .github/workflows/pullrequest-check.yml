@@ -4,13 +4,12 @@ on:
     branches:
       - main
 
-defaults:
-  run:
-    working-directory: ./example-nextjs-app
-
 jobs:
   check:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./example-nextjs-app
     strategy:
       matrix:
         nextjs-version: [ 12, 13, 14 ]
