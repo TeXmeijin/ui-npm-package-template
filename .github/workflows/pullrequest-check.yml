@@ -3,6 +3,11 @@ on:
   pull_request:
     branches:
       - main
+
+defaults:
+  run:
+    working-directory: ./example-nextjs-app
+
 jobs:
   check:
     runs-on: ubuntu-latest
