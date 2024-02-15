@@ -5,6 +5,10 @@ on:
     paths:
       - 'example-nextjs-app/**'
       - '!**.md'
+  push:
+    paths:
+      - 'example-nextjs-app/**'
+      - '!**.md'
   workflow_dispatch:
 
 defaults:
