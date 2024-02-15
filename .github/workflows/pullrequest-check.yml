@@ -19,10 +19,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '20.x'
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 8
-      - run: pnpm i --frozen
-      - run: pnpm install next@${{ matrix.nextjs-version }}
-      - run: pnpm run lint
-      - run: pnpm run test:ci
+      - run: yarn --frozen-lockfile
+      - run: yarn add next@${{ matrix.nextjs-version }}
+      - run: yarn run lint
+      - run: yarn build
