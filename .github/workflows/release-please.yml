@@ -6,6 +6,7 @@ on:
       - '**'
       - '!.github/**'
       - '!.storybook/**'
+      - '!example-next-app/**'
 
 permissions:
   contents: write
