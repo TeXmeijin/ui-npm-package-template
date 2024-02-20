@@ -8,7 +8,6 @@ await Promise.all([
     minify: true,
     format: 'esm',
     target: 'esnext',
-    outExtension: { '.js': '.mjs' },
     sourcemap: true,
     splitting: true,
     external: ['*'],
