@@ -262,10 +262,10 @@
   dependencies:
     tslib "^2.4.0"
 
-"@texmeijin/ui-library-example@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@texmeijin/ui-library-example/-/ui-library-example-1.0.1.tgz#bc7d89baf9487231e29442fd38744feea050fdcb"
-  integrity sha512-qEok2VnoiEwCjB0OdpldFodsqPVCx8Llx7JkcY/0l45Pxdkc93RS4aelEcFFIVkZJTnu4XfYsc2bJvBsWupW5A==
+"@texmeijin/ui-library-example@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@texmeijin/ui-library-example/-/ui-library-example-1.0.2.tgz#eb9dea6c613f42da8e6a67a040235aaace100213"
+  integrity sha512-2cWkxPnSzS4O3M+fBPzmJ1i+lg9vx69BuGrNVvM0EDUtE3CfOWiMzgsWbbO4vDJraALHJqA7+GddVsCXXx7tDg==
   dependencies:
     "@tiptap/core" "^2.1.16"
     "@tiptap/extension-bold" "^2.1.16"

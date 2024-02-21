@@ -5,11 +5,14 @@ on:
     paths:
       - 'example-nextjs-app/**'
       - '!**.md'
+  push:
+    paths:
+      - 'example-nextjs-app/**'
+      - '!**.md'
   workflow_dispatch:
 
 defaults:
   run:
-    # change this if your nextjs app does not live at the root of the repo
     working-directory: ./example-nextjs-app
 
 env:
