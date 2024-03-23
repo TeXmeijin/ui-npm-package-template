@@ -1,7 +1,7 @@
 'use client'
 import { Transition } from '@headlessui/react'
 import { useState } from 'react'
-import { cname } from '@texmeijin/ui-library-example'
+import { cname } from '@texmeijin/meijin-ui'
 
 function MyComponent() {
   const [isShowing, setIsShowing] = useState(false)

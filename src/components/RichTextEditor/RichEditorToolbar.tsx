@@ -39,7 +39,7 @@ const RichEditorToolbar = ({ editor, uploadImage, isUploading, uploadImageError 
   return (
     <div
       className={
-        'mej-flex mej-flex-wrap mej-gap-2 mej-border-b mej-border-gray mej-bg-primary mej-px-4 mej-py-2 mej-text-2xl'
+        'mej-flex mej-flex-wrap mej-gap-2 mej-border-b mej-border-gray mej-bg-richTextEditor-toolBarBg mej-px-4 mej-py-2 mej-text-2xl'
       }
     >
       <button

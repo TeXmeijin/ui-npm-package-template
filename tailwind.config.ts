@@ -10,13 +10,16 @@ export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     colors: {
-      white: '#fdfdfd',
-      body: '#3a3f4a',
-      gray: '#777',
-      primary: '#0d8a23',
-      accent: '#1306c7',
-      secondary: '#99621b',
-      error: '#bb3849',
+      white: 'var(--color-white)',
+      body: 'var(--color-body)',
+      gray: 'var(--color-gray)',
+      primary: 'var(--color-primary)',
+      accent: 'var(--color-accent)',
+      secondary: 'var(--color-secondary)',
+      error: 'var(--color-error)',
+      richTextEditor: {
+        toolBarBg: 'var(--color-rich-text-editor-tool-bar-bg)',
+      },
     },
   },
   corePlugins: {
