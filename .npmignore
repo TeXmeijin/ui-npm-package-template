@@ -11,3 +11,4 @@ tsconfig.json
 .npmrc
 postcss.config.cjs
 tailwind.config.*
+build.mjs
