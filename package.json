@@ -1,6 +1,6 @@
 {
   "name": "@texmeijin/meijin-ui",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "UI Components and Utils built with React.",
   "sideEffects": false,
   "main": "./dist/cjs/index.js",

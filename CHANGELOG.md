@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/TeXmeijin/ui-npm-package-template/compare/v1.1.0...v1.2.0) (2024-03-25)
+
+
+### Features
+
+* 🎸 .background-transitionクラスと動作確認用Button追加 ([97fb8f7](https://github.com/TeXmeijin/ui-npm-package-template/commit/97fb8f7cc4d20904e8a194614e15d7384682246d))
+
 ## [1.1.0](https://github.com/TeXmeijin/ui-npm-package-template/compare/v1.0.1...v1.1.0) (2024-03-23)
 
 
