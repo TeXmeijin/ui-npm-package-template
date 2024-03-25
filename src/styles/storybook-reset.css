@@ -19,12 +19,12 @@
       },
      */
     :root {
-        --color-white: #f5f5f5;
+        --color-white: #fdfdfd;
         --color-body: #444;
         --color-gray: #ccc;
-        --color-primary: #f56565;
+        --color-primary: #274fce;
         --color-accent: #48bb78;
-        --color-secondary: #3182ce;
+        --color-secondary: #1b886f;
         --color-error: #f56565;
         --color-rich-text-editor-tool-bar-bg: #66ffbb;
     }

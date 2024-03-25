@@ -1,9 +1,7 @@
-/**
- * TODO: 今後要検討
- */
 module.exports = {
-  extends: ['smarthr', 'plugin:storybook/recommended'],
-  plugins: ['import'],
+  extends: ['plugin:react/recommended', 'plugin:storybook/recommended'],
+  parser: '@typescript-eslint/parser',
+  plugins: ['import', '@typescript-eslint', 'jsx-a11y'],
   rules: {
     "react/react-in-jsx-scope": "off",
     "react/no-this-in-sfc": "off",
@@ -21,8 +19,5 @@ module.exports = {
       'error',
       'type',
     ],
-    'smarthr/a11y-delegate-element-has-role-presentation': 'error',
-    'smarthr/require-barrel-import': 'off',
-    'smarthr/a11y-clickable-element-has-text': 'off',
   },
 }

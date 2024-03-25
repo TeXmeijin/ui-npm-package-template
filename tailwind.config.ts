@@ -1,11 +1,9 @@
-/**
- * TODO
- * https://github.com/kufu/smarthr-ui/blob/master/tailwind.config.ts
- * こちらを見る限りはPresetをライブラリ側で定義して、利用側がそれを拡張する想定っぽい
- */
+import preset from './src/tailwind.preset'
+import plugin from 'tailwindcss/plugin'
 
 /** @type {import('tailwindcss').Config} */
 export default {
+  presets: [preset],
   prefix: 'mej-',
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
@@ -22,6 +20,18 @@ export default {
       },
     },
   },
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        '.background-transition': {
+          transition: 'filter 0.3s ease',
+        },
+        '.background-transition:hover': {
+          filter: 'invert(0.1) saturate(120%)',
+        },
+      })
+    }),
+  ],
   corePlugins: {
     preflight: false,
     gridTemplateColumns: true,
